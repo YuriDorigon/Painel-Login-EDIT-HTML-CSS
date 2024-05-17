@@ -8,28 +8,41 @@
 </head>
 
 <body>
-  <div class="center">
-    <h1>Logar-se</h1>
+<!--para centralizar tudo-->
+  <div class="center"> 
+
+    <!--texto principal --> 
+    <h1>Juntar-se</h1> 
+
     <form method="post">
+
+      <!--Caixa para colocar o email-->
       <div class="txt_field">
         <input type="text" required>
         <span></span>
         <label>email</label>
       </div>
+
+      <!--Caixa para colocar a senha-->
       <div class="txt_field">
         <input type="password" required>
         <span></span>
         <label>senha</label>
       </div>
+
+      <!--Caixa de acordo com os termos -->
       <div class="form-group col-3 mb-1">
-        <label class="switch mt-2 form-check-label"><input type="checkbox"><span class="slider round"></span></label>
-        <label class="form-check-label mr-2"><br> de acordo a vender todos os seus orgãos 100% gratuitamente para nossa
-          instituição</b></label>
+        <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+        <label for="agreeTerms">
+          Salvar login
         </label>
       </div>
+      
       <br />
+      <!--botao de login-->
       <input type="submit" value="Login">
-      <div class="c-loader"></div>
+
+      <!--Caso não tenha conta -->
       <div class="signup_link">
         Ainda não é membro? <a href="#">clique para registrar-se</a>
       </div>
